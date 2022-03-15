@@ -116,7 +116,7 @@
 .photo-grid {
   display: grid;
   list-style-type: none;
-  width: calc(100vw - 32px);
+  width: calc(100% - 32px);
   margin: 0 auto 0;
   padding: 0;
   grid-template-columns: repeat(4, 1fr);
@@ -219,17 +219,25 @@
   text-align: center;
   box-sizing: border-box;
 }
-
+.card__button:hover {
+  background: #0063d2;
+  cursor: pointer;
+}
 .cover {
-  background-image: url(../images/cover__background.png);
+  background: url(../images/cover__background.png);
+  background-color: rgba(42, 44, 47, 0.3);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
+  background-blend-mode: darken;
   max-width: 1184px;
   min-width: 92vw;
   min-height: 740px;
+}
+.cover:hover {
+  background-color: rgba(42, 44, 47, 0.8);
 }
 .cover__box {
   display: flex;
@@ -239,6 +247,12 @@
   align-items: center;
   margin: auto;
   height: 100vh;
+}
+.black-layer {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
 }
 .cover__title {
   font-family: "Inter", Arial, sans-serif;
@@ -257,6 +271,9 @@
   line-height: 1.22;
   text-align: center;
 }
+.cover__break-space {
+  display: block;
+}
 
 .cover__button {
   background: #0278fe;
@@ -269,6 +286,10 @@
   max-width: 137px;
   text-align: center;
   align-self: center;
+}
+.cover__button:hover {
+  background: #0063d2;
+  cursor: pointer;
 }
 .footer {
   padding-top: 92px;
