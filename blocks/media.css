@@ -116,7 +116,7 @@
     align-items: center;
   }
   .places {
-    margin-top: min(92px, 19vw);
+    margin: min(92px, 19vw) 0 0;
   }
   .card {
     grid-template-areas:
@@ -133,12 +133,21 @@
   }
   .card__title {
     justify-self: start;
+    margin-left: max(5vw, 16px);
+    margin-right: max(5vw, 16px);
+  }
+  .card__text {
+    margin-left: max(5vw, 16px);
+    margin-right: max(5vw, 16px);
   }
   .website {
     justify-self: start;
+    margin-left: max(5vw, 16px);
+    margin-right: max(5vw, 16px);
   }
   .card__image {
     object-fit: cover;
+    width: 100vw;
   }
   .card__button {
     max-width: 288px;
