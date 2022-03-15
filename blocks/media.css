@@ -134,6 +134,9 @@
   .card__title {
     justify-self: start;
   }
+  .website {
+    justify-self: start;
+  }
   .card__image {
     object-fit: cover;
   }
