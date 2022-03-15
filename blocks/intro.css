@@ -1,0 +1,47 @@
+.intro {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 92px;
+  margin-left: 11vw;
+  margin-right: auto;
+  max-width: 61vw;
+  min-width: 720px;
+}
+.intro__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 1.07;
+  color: #ffffff;
+}
+.intro__qoute {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.42;
+  color: #ffffff;
+  margin-top: 40px;
+  max-width: 90%;
+}
+.intro__qoute-name {
+  justify-self: flex-end;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.42;
+  text-align: right;
+  margin-top: 10px;
+  color: #ffffff;
+  max-width: 95%;
+}
+.intro__text {
+  font-size: 16px;
+  line-height: 1.63;
+  margin-top: 32px;
+  width: 90%;
+  margin-bottom: 118px;
+}

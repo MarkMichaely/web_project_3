@@ -1,0 +1,57 @@
+@import url(./website.css);
+.card {
+  display: grid;
+  grid-template-areas:
+    "city website"
+    "image text"
+    "btn text";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  row-gap: 48px;
+  column-gap: 40px;
+}
+.card__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+  color: #ffffff;
+  grid-area: city;
+  max-width: 80%;
+}
+.card__image {
+  width: 100%;
+  object-fit: cover;
+  grid-area: image;
+}
+.card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  grid-area: text;
+}
+.card__paragraph {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.63;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.card__button {
+  background: #0278fe;
+  border-radius: 4px;
+  color: white;
+  padding: 13px 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+  grid-area: btn;
+  max-width: 248px;
+  max-height: 48px;
+  text-align: center;
+  box-sizing: border-box;
+}
