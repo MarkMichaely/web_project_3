@@ -54,7 +54,12 @@
   text-align: center;
   box-sizing: border-box;
 }
-
+@media screen and (min-width: 1280px) {
+  .card__button:hover {
+    background: #0063d2;
+    cursor: pointer;
+  }
+}
 @media screen and (max-width: 900px) {
   .card {
     column-gap: 28px;
