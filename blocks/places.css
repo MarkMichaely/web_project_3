@@ -7,3 +7,15 @@
   gap: 80px;
   padding-bottom: 92px;
 }
+@media screen and (max-width: 900px) {
+  .places {
+    max-width: 93%;
+    gap: 72px;
+  }
+}
+@media screen and (max-width: 699px) {
+  .places {
+    margin: min(92px, 19vw) 0 64px;
+    padding-bottom: 0;
+  }
+}

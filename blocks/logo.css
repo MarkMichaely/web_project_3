@@ -7,3 +7,10 @@
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (max-width: 699px) {
+  .logo {
+    padding-top: min(32px, 6vw);
+    width: min(270px, 62.5vw);
+    margin-bottom: min(90px, 15.6vw);
+  }
+}

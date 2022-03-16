@@ -45,3 +45,45 @@
   width: 90%;
   margin-bottom: 118px;
 }
+@media screen and (max-width: 900px) {
+  .intro {
+    margin-left: auto;
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 699px) {
+  .intro {
+    margin-top: min(90px, 20vw);
+    max-width: 90vw;
+    margin-left: 16px;
+    margin-right: 16px;
+    min-width: calc(100% - 16px);
+  }
+  .intro__title {
+    font-size: 32px;
+    line-height: 1.09;
+    max-width: 90vw;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .intro__qoute {
+    font-size: 24px;
+    line-height: 1.25;
+    max-width: 90vw;
+    margin-left: 16px;
+  }
+  .intro__qoute-name {
+    font-size: 24px;
+    max-width: 90vw;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .intro__text {
+    font-size: 16px;
+    line-height: 1.63;
+    max-width: 90vw;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: min(28vw, 118px);
+  }
+}

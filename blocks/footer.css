@@ -13,3 +13,13 @@
   text-align: center;
   color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: min(92px, 11.4vw) 0 24px;
+  }
+}
+@media screen and (max-width: 699px) {
+  .footer {
+    padding: min(88px, 20vw) 0 24px;
+  }
+}

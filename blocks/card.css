@@ -54,3 +54,53 @@
   text-align: center;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 900px) {
+  .card {
+    column-gap: 28px;
+  }
+  .card__title {
+    font-size: 42px;
+    max-width: 100%;
+  }
+  .card__paragraph {
+    font-size: 16px;
+    line-height: 1.63;
+  }
+}
+@media screen and (max-width: 699px) {
+  .card {
+    grid-template-areas:
+      "city"
+      "website"
+      "image"
+      "text"
+      "text"
+      "btn";
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+  .card__title {
+    justify-self: start;
+    margin-left: max(5vw, 16px);
+    margin-right: max(5vw, 16px);
+  }
+  .card__text {
+    margin-left: max(5vw, 16px);
+    margin-right: max(5vw, 16px);
+  }
+  .website {
+    justify-self: start;
+    margin-left: max(5vw, 16px);
+    margin-right: max(5vw, 16px);
+  }
+  .card__image {
+    object-fit: cover;
+    width: 100vw;
+  }
+  .card__button {
+    max-width: 288px;
+  }
+}
