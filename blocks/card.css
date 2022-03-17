@@ -10,6 +10,7 @@
   column-gap: 40px;
 }
 .card__title {
+  margin: 0;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -25,22 +26,26 @@
   grid-area: image;
 }
 .card__text {
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 25px;
   grid-area: text;
 }
 .card__paragraph {
+  margin: 0;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.63;
   color: #ffffff;
-  margin-bottom: 25px;
 }
 
 .card__button {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
   background: #0278fe;
   border-radius: 4px;
   color: white;
@@ -54,6 +59,31 @@
   text-align: center;
   box-sizing: border-box;
 }
+.card__website {
+  grid-area: website;
+  align-self: end;
+}
+.card__website_type_artist {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #ffffff;
+}
+.card__website_type_url-heading {
+  margin: 0 0 8px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaaaaa;
+}
+
 @media screen and (min-width: 1280px) {
   .card__button:hover {
     background: #0063d2;
@@ -70,7 +100,6 @@
   }
   .card__paragraph {
     font-size: 16px;
-    line-height: 1.63;
   }
 }
 @media screen and (max-width: 699px) {
@@ -91,21 +120,23 @@
     justify-self: start;
     margin-left: max(5vw, 16px);
     margin-right: max(5vw, 16px);
+    font-size: 32px;
+    line-height: 1.09;
   }
   .card__text {
     margin-left: max(5vw, 16px);
     margin-right: max(5vw, 16px);
   }
-  .website {
+  .card__website {
     justify-self: start;
     margin-left: max(5vw, 16px);
     margin-right: max(5vw, 16px);
   }
   .card__image {
     object-fit: cover;
-    width: 100vw;
+    width: calc(100vw - 5px);
   }
   .card__button {
-    max-width: 288px;
+    min-width: 288px;
   }
 }

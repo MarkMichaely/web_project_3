@@ -1,6 +1,6 @@
 .places {
   margin: 92px auto 0;
-  max-width: 90%;
+  max-width: min(93.7vw, 987px);
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -12,34 +12,37 @@
     <title>Practicum Art Gallery</title>
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
-  <body>
+  <body class="body">
     <div class="page">
-      <img
-        src="./images/logo.svg"
-        alt="Practicum Art Gallery logo"
-        class="logo"
-      />
-      <header class="lead">
-        <h1 class="lead__title">From Homeland to Homeland</h1>
-        <h2 class="lead__subtitle">
-          An epic journey from Kentucky to Burundi through Wales and Ukraine
-        </h2>
+      <header class="header">
         <img
-          src="./images/lead__image.jpg"
-          alt="Village by the sea with an over-looking tower on hill, black and white photo"
-          class="lead__image"
+          src="./images/logo.svg"
+          alt="Practicum Art Gallery logo"
+          class="logo"
         />
       </header>
+
       <main class="main">
+        <section class="lead">
+          <h1 class="lead__title">From Homeland to Homeland</h1>
+          <p class="lead__subtitle">
+            An epic journey from Kentucky to Burundi through Wales and Ukraine
+          </p>
+          <img
+            src="./images/lead__image.jpg"
+            alt="Village by the sea with an over-looking tower on hill, black and white photo"
+            class="lead__image"
+          />
+        </section>
         <section class="intro">
           <h2 class="intro__title">
             Know the places your online pals come from a little better
           </h2>
-          <p class="intro__qoute">
+          <blockquote class="intro__qoute">
             Every human being is an artist, a freedom being, called to
             participate in transforming and reshaping the conditions, thinking,
             and structures that shape and inform our lives.
-          </p>
+          </blockquote>
           <p class="intro__qoute-name">— Joseph Beuys</p>
           <p class="intro__text">
             The town of Practicum has brought together professionals from
@@ -53,68 +56,68 @@
             neighbor.
           </p>
         </section>
-        <!-- <section class="photos"> -->
-        <ul class="photo-grid">
-          <li class="photo-grid__item">
-            <img
-              src="./images/photo__grid1.png"
-              alt="city by sea"
-              class="photo-grid__item"
-            />
-          </li>
-          <li class="photo-grid__item">
-            <img
-              src="./images/photo__grid2.png"
-              alt="city by sea"
-              class="photo-grid__item"
-            />
-          </li>
-          <li class="photo-grid__item">
-            <img
-              src="./images/photo__grid3.png"
-              alt="sunset of city"
-              class="photo-grid__item"
-            />
-          </li>
-          <li class="photo-grid__item">
-            <img
-              src="./images/photo__grid4.png"
-              alt="city by sea"
-              class="photo-grid__item"
-            />
-          </li>
-          <li class="photo-grid__item">
-            <img
-              src="./images/photo__grid5.png"
-              alt="green field"
-              class="photo-grid__item"
-            />
-          </li>
-          <li class="photo-grid__item">
-            <img
-              src="./images/photo__grid6.png"
-              alt="bushes by brick road"
-              class="photo-grid__item"
-            />
-          </li>
-          <li class="photo-grid__item">
-            <img
-              src="./images/photo__grid7.png"
-              alt="mud huts"
-              class="photo-grid__item"
-            />
-          </li>
-          <li class="photo-grid__item">
-            <img
-              src="./images/photo__grid8.png"
-              alt="wooden houses"
-              class="photo-grid__item"
-            />
-          </li>
-        </ul>
-        <!-- </section> -->
+        <section class="photos">
+          <ul class="photo-grid">
+            <li>
+              <img
+                src="./images/photo__grid1.png"
+                alt="city by sea"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo__grid2.png"
+                alt="city by sea"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo__grid3.png"
+                alt="sunset of city"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo__grid4.png"
+                alt="city by sea"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo__grid5.png"
+                alt="green field"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo__grid6.png"
+                alt="bushes by brick road"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo__grid7.png"
+                alt="mud huts"
+                class="photo-grid__item"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo__grid8.png"
+                alt="wooden houses"
+                class="photo-grid__item"
+              />
+            </li>
+          </ul>
+        </section>
         <section class="places">
-          <div class="card">
+          <article class="card">
             <h2 class="card__title">Kyiv, Ukraine</h2>
             <img
               src="./images/Kyiv__image.png"
@@ -126,9 +129,9 @@
               class="card__button"
               >Buy this artwork as NFT</a
             >
-            <div class="website">
-              <p class="website__url-heading">Artist</p>
-              <p class="website__artist">
+            <div class="card__website">
+              <p class="card__website_type_url-heading">Artist</p>
+              <p class="card__website_type_artist">
                 Natalia Dolgushina, content producer
               </p>
             </div>
@@ -151,9 +154,9 @@
                 of the right one.
               </p>
             </div>
-          </div>
+          </article>
 
-          <div class="card">
+          <article class="card">
             <h2 class="card__title">Cricieth, Wales</h2>
             <img
               src="./images/Cricieth__image.png"
@@ -165,10 +168,14 @@
               class="card__button"
               >Buy this artwork as NFT</a
             >
-            <div class="website">
-              <p class="website__url-heading">Artist</p>
-              <p class="website__artist">Steffan Warren, lead editor</p>
-              <p class="website__artist">Kseniya Glagoleva, project manager</p>
+            <div class="card__website">
+              <p class="card__website_type_url-heading">Artist</p>
+              <p class="card__website_type_artist">
+                Steffan Warren, lead editor
+              </p>
+              <p class="card__website_type_artist">
+                Kseniya Glagoleva, project manager
+              </p>
             </div>
             <div class="card__text">
               <p class="card__paragraph">
@@ -189,8 +196,8 @@
                 to hold the office of Prime Minister of the UK.
               </p>
             </div>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <h2 class="card__title">Berea, USA</h2>
             <img
               src="./images/Berea__image.png"
@@ -202,9 +209,11 @@
               class="card__button"
               >Buy this artwork as NFT</a
             >
-            <div class="website">
-              <p class="website__url-heading">Artist</p>
-              <p class="website__artist">Travis Turner, author and editor</p>
+            <div class="card__website">
+              <p class="card__website_type_url-heading">Artist</p>
+              <p class="card__website_type_artist">
+                Travis Turner, author and editor
+              </p>
             </div>
             <div class="card__text">
               <p class="card__paragraph">
@@ -225,8 +234,8 @@
                 student receives a full-tuition scholarship.
               </p>
             </div>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <h2 class="card__title">Muramvya, Burundi</h2>
             <img
               src="./images/Muramvya__image.png"
@@ -238,9 +247,11 @@
               class="card__button"
               >Buy this artwork as NFT</a
             >
-            <div class="website">
-              <p class="website__url-heading">Artist</p>
-              <p class="website__artist">Grevisse Kenguruka, tech editor</p>
+            <div class="card__website">
+              <p class="card__website_type_url-heading">Artist</p>
+              <p class="card__website_type_artist">
+                Grevisse Kenguruka, tech editor
+              </p>
             </div>
             <div class="card__text">
               <p class="card__paragraph">
@@ -268,8 +279,8 @@
                 the country.
               </p>
             </div>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <h2 class="card__title">Ariel, Israel</h2>
             <img
               src="./images/Ariel.jpg"
@@ -281,9 +292,9 @@
               class="card__button"
               >Buy this artwork as NFT</a
             >
-            <div class="website">
-              <p class="website__url-heading">Artist</p>
-              <p class="website__artist">Mark Michaely, student</p>
+            <div class="card__website">
+              <p class="card__website_type_url-heading">Artist</p>
+              <p class="card__website_type_artist">Mark Michaely, student</p>
             </div>
             <div class="card__text">
               <p class="card__paragraph">
@@ -299,16 +310,16 @@
                 Adumim.
               </p>
             </div>
-          </div>
+          </article>
         </section>
         <section class="cover">
           <div class="cover__box">
             <h2 class="cover__title">Visit us</h2>
-            <h3 class="cover__subtitle">
+            <p class="cover__subtitle">
               <span class="cover__break-space">Year-round</span>
               <span class="cover__break-space">Practicum Art Gallery</span>
               <span class="cover__break-space">404 Tim Berners-Lee Ave</span>
-            </h3>
+            </p>
             <a
               href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq"
               class="cover__button"

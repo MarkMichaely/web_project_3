@@ -1,16 +1,9 @@
 .logo {
   width: 270px;
   height: 70px;
-  display: flex;
-  padding-top: 34px;
-  margin-bottom: 90px;
-  margin-right: auto;
-  margin-left: auto;
 }
 @media screen and (max-width: 699px) {
   .logo {
-    padding-top: min(32px, 6vw);
     width: min(270px, 62.5vw);
-    margin-bottom: min(90px, 15.6vw);
   }
 }

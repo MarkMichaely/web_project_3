@@ -1,14 +1,16 @@
 .lead {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0;
   max-width: 76vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  max-width: 984px;
   min-width: 900px;
 }
 
 .lead__title {
+  margin: 0;
+  padding: 0;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -16,10 +18,9 @@
   line-height: 1.04;
   color: #ffffff;
   text-align: center;
-  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
-  min-width: 93%;
+  max-width: 793px;
 }
 .lead__subtitle {
   font-family: "Inter", Arial, sans-serif;
@@ -31,10 +32,9 @@
   color: #ffffff;
   margin-top: 32px;
   margin-bottom: 64px;
-  max-width: 56vw;
   margin-left: auto;
   margin-right: auto;
-  min-width: 93%;
+  max-width: 720px;
 }
 .lead__image {
   max-width: 100%;
@@ -43,6 +43,9 @@
 @media screen and (max-width: 900px) {
   .lead {
     min-width: 100%;
+  }
+  .lead__title {
+    max-width: min(793px, 93.7vw);
   }
 }
 @media screen and (max-width: 699px) {
