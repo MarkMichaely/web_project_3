@@ -59,11 +59,11 @@
   text-align: center;
   box-sizing: border-box;
 }
-.card__website {
+.card__artist {
   grid-area: website;
   align-self: end;
 }
-.card__website_type_artist {
+.card__name {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
@@ -72,7 +72,7 @@
   line-height: 1.22;
   color: #ffffff;
 }
-.card__website_type_url-heading {
+.card__heading {
   margin: 0 0 8px;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
@@ -127,7 +127,7 @@
     margin-left: max(5vw, 16px);
     margin-right: max(5vw, 16px);
   }
-  .card__website {
+  .card__artist {
     justify-self: start;
     margin-left: max(5vw, 16px);
     margin-right: max(5vw, 16px);
