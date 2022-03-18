@@ -46,6 +46,9 @@
   .lead__title {
     max-width: min(793px, 93.7vw);
   }
+  .lead__subtitle {
+    margin-bottom: max(36px, 5vw);
+  }
 }
 @media screen and (max-width: 699px) {
   .lead {
@@ -58,5 +61,6 @@
   .lead__subtitle {
     font-size: 16px;
     line-height: 1.25;
+    margin: max(16px, 5vw) auto max(40px, 12.5vw);
   }
 }

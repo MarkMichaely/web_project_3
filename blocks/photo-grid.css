@@ -24,5 +24,6 @@
 @media screen and (max-width: 699px) {
   .photo-grid {
     gap: 12px;
+    max-width: max(288px, 9vw);
   }
 }

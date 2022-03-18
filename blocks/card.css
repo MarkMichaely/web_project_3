@@ -58,12 +58,13 @@
   max-height: 48px;
   text-align: center;
   box-sizing: border-box;
+  font-weight: 600;
 }
-.card__website {
+.card__artist {
   grid-area: website;
   align-self: end;
 }
-.card__website_type_artist {
+.card__name {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
@@ -72,7 +73,7 @@
   line-height: 1.22;
   color: #ffffff;
 }
-.card__website_type_url-heading {
+.card__heading {
   margin: 0 0 8px;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
@@ -97,6 +98,7 @@
   .card__title {
     font-size: 42px;
     max-width: 100%;
+    align-self: end;
   }
   .card__paragraph {
     font-size: 16px;
@@ -115,6 +117,7 @@
     justify-items: center;
     gap: 30px;
     width: 100%;
+    overflow: hidden;
   }
   .card__title {
     justify-self: start;
@@ -127,15 +130,12 @@
     margin-left: max(5vw, 16px);
     margin-right: max(5vw, 16px);
   }
-  .card__website {
+  .card__artist {
     justify-self: start;
     margin-left: max(5vw, 16px);
     margin-right: max(5vw, 16px);
   }
-  .card__image {
-    object-fit: cover;
-    width: calc(100vw - 5px);
-  }
+
   .card__button {
     min-width: 288px;
   }
